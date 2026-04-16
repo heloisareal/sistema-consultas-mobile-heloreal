@@ -1,26 +1,22 @@
 # Sistema de Consultas Mobile
+- Heloísa Real - 554535
 
-Aplicativo mobile desenvolvido com Expo e React Native para demonstrar o fluxo básico de uma consulta médica. A tela principal exibe os dados da consulta, do médico e do paciente, além de permitir alterar o status entre `agendada`, `confirmada` e `cancelada`.
+Aplicação mobile construída com **Expo** e **React Native** que simula o fluxo básico de uma consulta médica. O app apresenta informações completas da consulta, incluindo médico, paciente e status, com possibilidade de interação direta na interface.
 
-## Tecnologias
+---
 
-- Expo
-- React Native
-- React
-- TypeScript
+## Tecnologias Utilizadas
 
-## Funcionalidades
+- Expo  
+- React Native  
+- React  
+- TypeScript  
 
-- Exibição de uma consulta médica em card
-- Visualização dos dados do médico e da especialidade
-- Visualização dos dados do paciente
-- Formatação de data no padrão `pt-BR`
-- Formatação de valor em real brasileiro (`BRL`)
-- Alteração de status da consulta com feedback visual
+---
 
-## Estrutura do projeto
+## Organização do Projeto
 
-```text
+```
 .
 ├── App.tsx
 ├── src
@@ -42,13 +38,19 @@ Aplicativo mobile desenvolvido com Expo e React Native para demonstrar o fluxo b
 └── package.json
 ```
 
-## Como executar
+---
+
+## Como Rodar o Projeto
 
 ### Pré-requisitos
 
-- Node.js instalado
-- npm instalado
-- Expo Go no celular ou emulador Android/iOS configurado
+Antes de começar, você precisa ter instalado:
+
+- Node.js  
+- npm  
+- Expo Go (no celular) **ou** emulador configurado (Android/iOS)  
+
+---
 
 ### Instalação
 
@@ -56,20 +58,24 @@ Aplicativo mobile desenvolvido com Expo e React Native para demonstrar o fluxo b
 npm install
 ```
 
-### Executando o projeto
+---
+
+### Executando a aplicação
 
 ```bash
 npx expo start
 ```
 
-Com o servidor do Expo aberto, você pode:
+Após iniciar o servidor, você pode:
 
-- pressionar `a` para abrir no Android
-- pressionar `i` para abrir no iOS, quando estiver em macOS
-- pressionar `w` para abrir na web
-- escanear o QR Code com o Expo Go no celular
+- Pressionar **`a`** → abrir no Android  
+- Pressionar **`i`** → abrir no iOS (somente macOS)  
+- Pressionar **`w`** → abrir no navegador  
+- Escanear o QR Code com o Expo Go  
 
-Também é possível usar os atalhos:
+---
+
+### Atalhos disponíveis
 
 ```bash
 npm run android
@@ -77,26 +83,38 @@ npm run ios
 npm run web
 ```
 
-## Modelo de dados
+---
 
-O projeto trabalha com as seguintes entidades:
+## Estrutura de Dados
 
-- `Especialidade`: representa a área médica
-- `Medico`: contém dados do profissional e sua especialidade
-- `Paciente`: contém dados cadastrais do paciente
-- `Consulta`: reúne médico, paciente, data, valor, observações e status
-- `StatusConsulta`: define os estados possíveis da consulta
+A aplicação utiliza entidades simples para simular o domínio:
 
-## Tela principal
+- **Especialidade** → área médica do profissional  
+- **Médico** → dados do profissional + especialidade  
+- **Paciente** → informações cadastrais  
+- **Consulta** → reúne todos os dados da consulta  
+- **StatusConsulta** → controla o estado atual da consulta  
 
-A tela `Home` cria dados de exemplo em memória e renderiza o componente `ConsultaCard`, responsável por:
+---
 
-- mostrar o status atual da consulta
-- listar médico, paciente, data, valor e observações
-- exibir ações para confirmar ou cancelar enquanto a consulta estiver `agendada`
-- trocar a interface para mensagens de sucesso ou cancelamento após a ação
+## Tela Principal
 
-## Scripts disponíveis
+A tela `Home` funciona como ponto central da aplicação:
+
+- Cria dados fictícios em memória  
+- Renderiza o componente `ConsultaCard`  
+- Permite interações com o status da consulta  
+
+### O componente `ConsultaCard` é responsável por:
+
+- Exibir status atual  
+- Mostrar médico, paciente, data, valor e observações  
+- Permitir confirmar ou cancelar consultas agendadas  
+- Atualizar a interface conforme a ação do usuário  
+
+---
+
+## Scripts Disponíveis
 
 ```bash
 npm start
@@ -105,8 +123,4 @@ npm run ios
 npm run web
 ```
 
-## Observações
-
-- O projeto utiliza dados mockados diretamente na tela inicial
-- Ainda não há integração com API ou persistência de dados
-- Ainda não há testes automatizados configurados
+---
