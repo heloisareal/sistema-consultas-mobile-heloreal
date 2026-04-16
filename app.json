@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "sistema-consultas-mobile-heloreal",
-    "slug": "sistema-consultas-mobile-heloreal",
+    "name": "sistema-consultas-mobile",
+    "slug": "sistema-consultas-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
