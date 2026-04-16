@@ -1,3 +1,4 @@
+/* Heloísa Real - 554535*/
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
